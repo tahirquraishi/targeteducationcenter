@@ -3,10 +3,63 @@ body{
 }
 
 .logoImg{
-    margin:2px;
-    height: 90px;
-    width: 90px;
+    margin:0px;
+    border: 0px;
+    height: 55px;
+    width: 55px;
 }
+
+.nav-item:hover {
+    background-color: #b4f0f0!important;
+    border-radius: 4px;
+}
+
+.navbar-header>a {
+    padding-left: 20px;
+}
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.col-sm-5, .col-sm-8 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.fullbg{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+     url(../images/main1.jpeg);
+    opacity: 1.0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.fullbgSubjects{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+     url(../images/pen.jpeg);
+    opacity: 1.0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 
 .pgContainer{
     margin: 0 auto;
@@ -18,12 +71,11 @@ body{
 
 .businessName{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     top:-2px;
-    background-color: white;
     padding-left: 10px;
-
+    background-color: transparent !important;
 }
 
 /* nav bar*/
@@ -50,6 +102,10 @@ body{
     color: white;
   }
 
+  .navbar-brand a{
+      color: white;
+  }
+
   /* flex box */
   .main-container{
     position:relative;
@@ -64,6 +120,23 @@ body{
     box-sizing: border-box;  
     border:1px solid lightgray;
     box-shadow: 1px 2px 3px 2px lightblue;
+}
+
+.call-out-bar h3 {
+    margin-top:5px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #d7f1f1;
+    font-family: 'Charm';
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.col-sm-10 h4{
+    font-family: 'Charm';
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 @media(min-width: 600px){
     .main-container{

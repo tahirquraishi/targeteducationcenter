@@ -1,136 +1,161 @@
 <!DOCTYPE html>
 <html>
-    <!-- https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp -->
+    <!-- 
+    https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp 
+    https://www.codeply.com/go/qhaBrcWp3v            good examples of navbar with code
+    https://bootstrapbay.com/blog/bootstrap-tutorial-navbar/    with collapseable button
+    https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse&stacked=h
+-->
     <head>
         <title>Target Education Center</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm" />
         <link rel="stylesheet" href="content/css/site.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm" />
-        <link rel="stylesheet" href="content/bootstrap-4.2.1-dist/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body id="home">
-                
-        
-    <div class="pgContainer">
-        <div class="row">
-            <div class="col-sm-5">
-                <img class="logoImg" src="content/images/logo.png" alt="" align="left">
-                <label class="businessName">Target Education Center</label><br/>
-                <span style="position: relative;left:140px;text-align: right;
+    
+<nav class="navbar navbar-inverse navbar-fixed-static">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <img class="logoImg" src="content/images/logo.png" alt="" align="left">
+            <span class="navbar-brand"  style="margin-left:10px !important; padding:10px 10px !important;">
+            Target Education Center<br/>
+                <span style="position: relative;left:80px;text-align: right; 
                 font-size: 14px; 
                 width: 100%;
-                top:-15px;
+                top:-1px;
                 margin-top:0px;">aiming for success</span>
-            </div>
-            <div class="col-sm-7">
-                <div class="topnav">
-                    <a class="active" href="#home">Home</a>
-                    <a href="#aboutus">About us</a>
-                    <a href="#programs">Programs</a>
-                    <a href="#subjects">Subjects</a>
-                    <a href="#workwithus">Work with us</a>
-                    <a href="#contacts">Contacts</a>
-                </div>
-            </div>            
+            </span>
+            
         </div>
-        
-        <div class="row" style="margin: 20px 10px">
-            <div class="col-sm-6">
-                <img src="content/images/books.png" alt="" height="450" width="452" border="0">
-            </div>
-            <div class="col-sm-6" >
-                <img src="content/images/brain.png" alt="" height="450" width="452" border="0">
-            </div>
-        </div>
-       <div class="row">
-           <div class="col-sm-12">&nbsp;</div>
-       </div>
-       <div class="row" id="aboutus">
-           <div class="col-sm-10" style="margin:5px 30px;">
-                <h4>About us</h4>
-                <p>Target Education Centre is a locally owned education compnay with a combined 20 years of teaching and tutring experience. Our tutors hold bachelors, masters and doctoral degrees in engineering and mathematics.</p>
-        
-                <p>We have established our company in 2019 in a wake of math crisis in Alberta and with a main goal of helping students to excel in their courses and overcome their challenges may have during study or test. We understand the frustations that sudents may have while solving science problems therefore we are well positioned to assist.</p>
-        
-                <p>Target Education Centre has a unique and step by step appoarch to identify the student’s strength and weakness on the subject matter in order to help them in the best way possible.</p>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-
-        <div class="row" id="programs">
-            <div class="col-sm-10" style="margin:5px 30px;">
-                <h4>Programs</h4>
-                <ul>
-                    <li>kindergarden to high school</li>
-                    <li>College and university students</li>
-                    <li>Adult programs</li>
-                    <li>Summer upgrading</li>
-                    <li>Online Tutoring</li>
+        <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#aboutus">About us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#workwithus">Work With us</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
-            </div>
-            <div class="col-sm-2"></div>
         </div>
-
-        <div class="row" id="subjects">
-            <div class="col-sm-10" style="margin:5px 30px;">
-                <h4>Subjects</h4>
-                <ul>
-                    <li>Mahtematics</li>
-                    <li>Physics</li>
-                    <li>Cheistry</li>
-                </ul>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-
-        <div class="row" id="workwithus">
-            <div class="col-sm-10" style="margin:5px 30px;">
-                <h4>Work with us</h4>
-                <p>Please email your resume and cover letter to someemail@somecompany.ca</p>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-
-        <div class="row" id="contacts">
-            <div class="col-sm-10" style="margin:5px 30px;">
-                <h4>Contacts</h4>
-                <p>Please contact us at one of our Calgary locations nearest to you for free consultation.</p>
-                <div class="main-container">
-                    <div class="call-out-bar">
-                        <h3>Calgary North</h3>
-                        <p>(north of 16th avenue)<br/>
-                            Abulmaali<br/>
-                            Cell:&nbsp;1-587-966-7607
-                        </p>
-                    </div>
-                    <div class="call-out-bar">
-                        <h3>Calgary Center</h3>
-                        <p>(between Glenmore & 16th Ave)<br/>
-                            Wasim<br/>
-                            Cell:&nbsp;1-403-681-4657
-                        </p>
-                    </div>
-                    <div class="call-out-bar">
-                        <h3>Calgary South</h3>
-                        <p>(south of Glenmore)<br/>
-                            Kayvan<br/>
-                            Cell:&nbsp;1-403-880-0864
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">&nbsp;</div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12" style="margin:5px 30px;"><a href="#home">top</a></div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">&nbsp;</div>
-        <div class="row">&nbsp;</div>
-    </div><!-- end pgContainer -->
+    </div>
+</nav>
     
+    <div class="row" style="margin: 20px 10px">
+        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-sm-5" style="padding-right:0px !important;padding-left:30px !important;">
+            <img src="content/images/books.png" alt="" height="450" width="452" border="0">
+        </div>
+        <div class="col-sm-5" style="padding-left:0px !important;">
+            <img src="content/images/brain.png" alt="" height="450" width="452" border="0">
+        </div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+   <div class="row">
+       <div class="col-sm-12">&nbsp;</div>
+   </div>
+   <div class="row fullbg" id="aboutus">
+        <div class="col-sm-1">&nbsp;</div>
+       <div class="col-sm-10  " style="margin:5px 30px;">
+            <h4>About us</h4>
+            <p>Target Education Centre is a locally owned education compnay with a combined 20 years of teaching and tutring experience. Our tutors hold bachelors, masters and doctoral degrees in engineering and mathematics.</p>
+    
+            <p>We have established our company in 2019 in a wake of math crisis in Alberta and with a main goal of helping students to excel in their courses and overcome their challenges may have during study or test. We understand the frustations that sudents may have while solving science problems therefore we are well positioned to assist.</p>
+    
+            <p>Target Education Centre has a unique and step by step appoarch to identify the student’s strength and weakness on the subject matter in order to help them in the best way possible.</p>
+        </div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+
+    <div class="row" id="programs">
+            <div class="col-sm-1">&nbsp;</div>
+        <div class="col-sm-10" style="margin:5px 30px;">
+            <h4>Programs</h4>
+            <ul>
+                <li>kindergarden to high school</li>
+                <li>College and university students</li>
+                <li>Adult programs</li>
+                <li>Summer upgrading</li>
+                <li>Online Tutoring</li>
+            </ul>
+        </div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+
+    <div class="row fullbgSubjects" id="subjects">
+        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-sm-10" style="margin:5px 30px;">
+            <h4>Subjects</h4>
+            <ul>
+                <li>Mahtematics</li>
+                <li>Physics</li>
+                <li>Cheistry</li>
+            </ul>
+        </div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+
+    <div class="row" id="workwithus">
+        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-sm-10" style="margin:5px 30px;">
+            <h4>Work with us</h4>
+            <p>Please email your resume and cover letter to someemail@somecompany.ca</p>
+        </div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+
+    <div class="row" id="contacts">
+        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-sm-10" style="margin:5px 30px;">
+            <h4>Contacts</h4>
+            <p>Please contact us at one of our Calgary locations nearest to you for free consultation.</p>
+            <div class="main-container">
+                <div class="call-out-bar">
+                    <h3>Calgary North</h3>
+                    <p>(north of 16th avenue)<br/>
+                        Abulmaali<br/>
+                        Cell:&nbsp;1-587-966-7607
+                    </p>
+                </div>
+                <div class="call-out-bar">
+                    <h3>Calgary Center</h3>
+                    <p>(between Glenmore & 16th Ave)<br/>
+                        Wasim<br/>
+                        Cell:&nbsp;1-403-681-4657
+                    </p>
+                </div>
+                <div class="call-out-bar">
+                    <h3>Calgary South</h3>
+                    <p>(south of Glenmore)<br/>
+                        Kayvan<br/>
+                        Cell:&nbsp;1-403-880-0864
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1">&nbsp;</div>
+        <div class="col-sm-10" style="margin:5px 30px;"><a href="#home">Home</a></div>
+        <div class="col-sm-1">&nbsp;</div>
+    </div>
+    <div class="row" id="copyrightFooter" style="background-color:#a7f1f1;text-align: center;">
+        <div class="col-sm-12" style="padding-top:5px">
+            <p>Copyright &#169; 2019 Target Education Center, Calgary Alberta</p>
+        </div>
+    </div>
+    
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>
 </html>
